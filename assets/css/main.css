@@ -696,6 +696,11 @@ section,
   padding-left: 10px;
 }
 
+.skill-title{
+  font-size: 30px;
+  color:#00ff00;
+}
+
 .skill .skill-logo{
   width: 70px;
   height: 50px;
