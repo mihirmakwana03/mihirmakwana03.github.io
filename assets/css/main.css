@@ -972,6 +972,19 @@ section,
 --------------------------------------------------------------*/
 .services .service-item {
   position: relative;
+  border: 2px solid var(--accent-color);
+  margin: 10px;
+  border-radius: 10px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+}
+
+.services .service-item:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  transition: 0.7s;
 }
 
 .services .service-item .icon {
@@ -1012,7 +1025,7 @@ section,
 }
 
 .services .service-item .title a:hover {
-  color: var(--accent-color);
+  color: var(--contrast-color);
 }
 
 .services .service-item .description {
