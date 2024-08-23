@@ -618,6 +618,10 @@ section,
   }
 }
 
+.col-lg-4 .img-fluid{
+  border-radius: 20px;
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -650,10 +654,54 @@ section,
 
 /*--------------------------------------------------------------
 # Stats Section
+/*--------------------------------------------------------------
+# Stats Section
 --------------------------------------------------------------*/
 .stats .stats-item {
   padding: 30px;
   width: 100%;
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+}
+
+#f1{
+  animation: floatAnimation 2s ease-in-out infinite;
+}
+
+#f2{
+  animation: floatAnimation2 2s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatAnimation2 {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.stats .stats-item:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.1);
+  transition: background-color 0.7s, transform 0.7s;
 }
 
 .stats .stats-item i {
@@ -664,13 +712,17 @@ section,
   line-height: 0;
 }
 
+.stats .stats-item:hover i {
+  color: white;
+}
+
 .stats .stats-item .purecounter {
   color: var(--heading-color);
   font-size: 48px;
   line-height: 40px;
-  display: block;
+  /* display: block; */
   font-weight: 700;
-  margin-left: 60px;
+  margin-left: 15px;
 }
 
 .stats .stats-item p {
@@ -698,7 +750,7 @@ section,
 
 .skill-title{
   font-size: 30px;
-  color:#00ff00;
+  color:#149ddd;
 }
 
 .skill .skill-logo{
